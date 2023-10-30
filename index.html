@@ -97,6 +97,7 @@
                                 <li><a href="#Skills">Skills</a></li>
                                 <li><a href="#Blogs">blogs</a></li> 
                                 <li><a href="#Resume">Resume</a></li>
+                                <li><a href="#Certificate">Certificate</a></li>
                              </ul>
                              </nav>
                             
@@ -112,7 +113,7 @@
                                  </div> 
                                 </section> 
 
-                                <section id="skills"> 
+                                <section id="Skills"> 
                                     <div class="section-content">
                                          <h2>Skills</h2> 
                                          <ul> 
@@ -123,7 +124,7 @@
                                              </ul>
                                              </div>
                                              </section>
-                                             <section id="#Blogs"> 
+                                             <section id="Blogs"> 
                                                 <div class="section-content"> 
                                                     <h2>Blogs</h2> 
                                                     <ul>
@@ -132,7 +133,7 @@
                                                         </ul>
                                                      </div>
                                                      </section>
-                                                     <section id="resume"> 
+                                                     <section id="Resume"> 
                                                         <center>
                                                              <div class="section-content"> 
                                                                 <h2>Resume</h2>
@@ -140,10 +141,7 @@
                                                                  </div> 
                                                                 </center> 
                                                             </section>
-                                                             <footer>
-                                                                 <p>&copy; bhuvan</p>
-                                                                 </footer>
-
+                                                            
                                                                  <script> 
                                                                  document.queryselectorall('a[href^="#"]').forEach(anchor => { 
                                                                         anchor.addeventlistener('click',function(e) { 
@@ -161,5 +159,36 @@
                                                                         });
                                                                     });
                                                                       </script>
+                                                                      <section id="Certificate"> 
+                                                                        <center>
+                                                                             <div class="section-content"> 
+                                                                                <h2>certificate</h2>
+                                                                                 <a href="https://drive.google.com/file/d/1p2YGJblYXDAr59JGCWyv_u9B4bnUwuEq/view?usp=drivesdk" class="download-button">Download</a>
+                                                                                 </div> 
+                                                                                </center> 
+                                                                            </section>
+                                                                            
+                                                                                 <script> 
+                                                                                 document.queryselectorall('a[href^="#"]').forEach(anchor => { 
+                                                                                        anchor.addeventlistener('click',function(e) { 
+                                                                                            e.preventdefault(); 
+                
+                                                                                         const targetld = this.getattribute('href').substring(1);
+                                                                                         const targetelement = document.getelementbyId(targetld);
+                
+                                                                                             if (targetelement) { 
+                                                                                                window.scrollto({
+                                                                                                      top: targetelement.offsettop, 
+                                                                                                       behavior: 'smooth'
+                                                                                                      });
+                                                                                            }
+                                                                                        });
+                                                                                    });
+                                                                                      </script>
+                                                                                     
+                                                                       <footer>
+                                                                        <p>&copy; bhuvan</p>
+                                                                        </footer>
+       
                                                                        </body>
                                                                         </html>
